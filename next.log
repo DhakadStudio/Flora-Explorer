@@ -1,0 +1,1040 @@
+▲ Next.js 16.3.3 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://10.230.7.36:3000
+✓ Ready in 2.3s
+✓ Running next.config.mjs took 86ms
+  Skipping creating a lockfile at /data/data/com.termux/files/home/opencode-test/.next/dev/lock because we're using WASM bindings
+
+○ Compiling /plant/[slug] ...
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unterminated regexp literal
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                          sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                          water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })
+ 580 |                   </p>
+     :                    ^^^
+ 581 |                 </div>
+ 582 |               </div>
+ 583 |             </div>
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unterminated regexp literal
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                          sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                          water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })
+ 580 |                   </p>
+     :                    ^^^
+ 581 |                 </div>
+ 582 |               </div>
+ 583 |             </div>
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unterminated regexp literal
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                          sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                          water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })
+ 580 |                   </p>
+     :                    ^^^
+ 581 |                 </div>
+ 582 |               </div>
+ 583 |             </div>
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+ GET /plant/neem 500 in 61s (next.js: 61s, application-code: 678ms)
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unterminated regexp literal
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                          sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                          water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })
+ 580 |                   </p>
+     :                    ^^^
+ 581 |                 </div>
+ 582 |               </div>
+ 583 |             </div>
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:575:1]
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                       rmin: plant.growth.rainfallMm[0],
+ 574 |                       rmax: plant.growth.rainfallMm[1],
+ 575 |                     {t('climate.summary', {
+     :                     ^
+ 576 |                       tmin: plant.growth.tempC[0],
+ 577 |                       tmax: plant.growth.tempC[1],
+ 578 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:575:1]
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                       rmin: plant.growth.rainfallMm[0],
+ 574 |                       rmax: plant.growth.rainfallMm[1],
+ 575 |                     {t('climate.summary', {
+     :                     ^
+ 576 |                       tmin: plant.growth.tempC[0],
+ 577 |                       tmax: plant.growth.tempC[1],
+ 578 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84) 
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx 
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx 
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+ GET /plant/tulsi 500 in 2.5s (next.js: 2.5s, application-code: 65ms)
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84) 
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+ GET /plant/tulsi 500 in 54ms (next.js: 12ms, application-code: 43ms)
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:573:1]
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                       tmax: plant.growth.tempC[1],
+ 573 |                     {t('climate.summary', {
+     :                     ^
+ 574 |                       tmin: plant.growth.tempC[0],
+ 575 |                       tmax: plant.growth.tempC[1],
+ 576 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84) 
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:572:1]
+ 569 |                   <p className="mt-2 font-mono text-sm text-muted-foreground">
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                     {t('climate.summary', {
+     :                     ^
+ 573 |                       tmin: plant.growth.tempC[0],
+ 574 |                       tmax: plant.growth.tempC[1],
+ 575 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+ GET /plant/tulsi 500 in 2.6s (next.js: 2.6s, application-code: 45ms)
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:572:1]
+ 569 |                   <p className="mt-2 font-mono text-sm text-muted-foreground">
+ 570 |                     {t('climate.summary', {
+ 571 |                       tmin: plant.growth.tempC[0],
+ 572 |                     {t('climate.summary', {
+     :                     ^
+ 573 |                       tmin: plant.growth.tempC[0],
+ 574 |                       tmax: plant.growth.tempC[1],
+ 575 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:574:1]
+ 571 |                           sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 572 |                           water: t('water.' + plant.growth.waterNeed)
+ 573 |                         })}
+ 574 | ,->                 </div>
+ 575 | `->               </div>
+ 576 |                 </div>
+ 577 |               </section>
+ 578 |               
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+ GET /plant/tulsi 500 in 2.2s (next.js: 2.2s, application-code: 37ms)
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:574:1]
+ 571 |                           sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 572 |                           water: t('water.' + plant.growth.waterNeed)
+ 573 |                         })}
+ 574 | ,->                 </div>
+ 575 | `->               </div>
+ 576 |                 </div>
+ 577 |               </section>
+ 578 |               
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:571:1]
+ 568 |                   </p>
+ 569 |                   <p className="mt-2 font-mono text-sm text-muted-foreground">
+ 570 |                     {t('climate.summary', {
+ 571 |                     {t('climate.summary', {
+     :                     ^
+ 572 |                       tmin: plant.growth.tempC[0],
+ 573 |                       tmax: plant.growth.tempC[1],
+ 574 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+ GET /plant/tulsi 500 in 37ms (next.js: 10ms, application-code: 27ms)
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:571:1]
+ 568 |                   </p>
+ 569 |                   <p className="mt-2 font-mono text-sm text-muted-foreground">
+ 570 |                     {t('climate.summary', {
+ 571 |                     {t('climate.summary', {
+     :                     ^
+ 572 |                       tmin: plant.growth.tempC[0],
+ 573 |                       tmax: plant.growth.tempC[1],
+ 574 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                       water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })}
+ 580 |                     })}
+     :                     ^
+ 581 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 582 |                       water: t('water.' + plant.growth.waterNeed)
+ 583 |                     })}
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                       water: t('water.' + plant.growth.waterNeed)
+ 579 |                     })}
+ 580 |                     })}
+     :                       ^
+ 581 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 582 |                       water: t('water.' + plant.growth.waterNeed)
+ 583 |                     })}
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:583:1]
+ 580 |                     })}
+ 581 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 582 |                       water: t('water.' + plant.growth.waterNeed)
+ 583 |                     })}
+     :                     ^
+ 584 |                 </div>
+ 585 |               </div>
+ 586 |             </div>
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:583:1]
+ 580 |                     })}
+ 581 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 582 |                       water: t('water.' + plant.growth.waterNeed)
+ 583 |                     })}
+     :                       ^
+ 584 |                 </div>
+ 585 |               </div>
+ 586 |             </div>
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:584:1]
+ 581 |                           sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 582 |                           water: t('water.' + plant.growth.waterNeed)
+ 583 |                         })}
+ 584 | ,->                 </div>
+ 585 | `->               </div>
+ 586 |                 </div>
+ 587 |               </section>
+ 588 |               
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:580:1]
+ 577 |                           sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                           water: t('water.' + plant.growth.waterNeed)
+ 579 |                         })}
+ 580 | ,->             </div>
+ 581 | `->           </section>
+ 582 |               
+ 583 |               {/* Globe Section */}
+ 584 |               <section id="globe" className="scroll-mt-20">
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unterminated regexp literal
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:579:1]
+ 576 |                       pmax: plant.growth.soilPh[1],
+ 577 |                       sun: plant.growth.sunlightHours[0] + '-' + plant.growth.sunlightHours[1],
+ 578 |                       water: t('water.' + plant.growth.waterNeed)
+ 579 |                   </p>
+     :                    ^^^
+ 580 |                 </div>
+ 581 |                     })}
+ 582 |             </div>
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+⨯ ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:582:1]
+ 579 |                       water: t('water.' + plant.growth.waterNeed)
+ 580 |                   </p>
+ 581 |                 </div>
+ 582 |                     })}
+     :                     ^
+ 583 |             </div>
+ 584 |           </section>
+ 585 |           
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:582:1]
+ 579 |                       water: t('water.' + plant.growth.waterNeed)
+ 580 |                   </p>
+ 581 |                 </div>
+ 582 |                     })}
+     :                       ^
+ 583 |             </div>
+ 584 |           </section>
+ 585 |           
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:584:1]
+ 581 |                     </div>
+ 582 |                         })}
+ 583 |                 </div>
+ 584 | ,->           </section>
+ 585 | |             
+ 586 | `->           {/* Globe Section */}
+ 587 |               <section id="globe" className="scroll-mt-20">
+ 588 |                 <div className="mx-auto max-w-4xl px-4 md:px-10">
+ 589 |                   <h2 className="mb-6 font-serif text-4xl font-medium tracking-tight">
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+Import trace for requested module:
+./app/plant/[slug]/page.tsx
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Expected '</', got '{'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:571:1]
+ 568 |                   </p>
+ 569 |                   <p className="mt-2 font-mono text-sm text-muted-foreground">
+ 570 |                     {t('climate.summary', {
+ 571 |                     {t('climate.summary', {
+     :                     ^
+ 572 |                       tmin: plant.growth.tempC[0],
+ 573 |                       tmax: plant.growth.tempC[1],
+ 574 |                       rmin: plant.growth.rainfallMm[0],
+     `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at __wbg_Error_83742b46f01ce22d (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:153:25)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84)
+    at wasm_bindgen_85fad33f9d8c6813___convert__closures_____invoke___wasm_bindgen_85fad33f9d8c6813___JsValue__core_de86a6c1f3de1a5b___result__Result_____wasm_bindgen_85fad33f9d8c6813___JsError___true_ (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:467:22)
+    at real (/data/data/com.termux/files/home/opencode-test/node_modules/.pnpm/next@16.3.3_@babel+core@7.29.7_@types+node@24.10.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/wasm/@next/swc-wasm-nodejs/wasm.js:612:20)
+[browser] ./app/plant/[slug]/page.tsx
+Error:   x Unexpected token. Did you mean `{'>'}` or `&gt;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:179:1]
+ 176 |             />
+ 177 |             style={{ y: leafY }}
+ 178 |             className="pointer-events-none absolute right-[6%] top-[18%]"
+ 179 |           >
+     :           ^
+ 180 |             <Leaf 
+ 181 |               animate 
+ 182 |               speed={1.2} 
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:582:1]
+ 579 |                       water: t('water.' + plant.growth.waterNeed)
+ 580 |                   </p>
+ 581 |                 </div>
+ 582 |                     })}
+     :                     ^
+ 583 |             </div>
+ 584 |           </section>
+ 585 |           
+     `----
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:582:1]
+ 579 |                       water: t('water.' + plant.growth.waterNeed)
+ 580 |                   </p>
+ 581 |                 </div>
+ 582 |                     })}
+     :                       ^
+ 583 |             </div>
+ 584 |           </section>
+ 585 |           
+     `----
+  x Expected '</', got 'jsx text'
+     ,-[/data/data/com.termux/files/home/opencode-test/app/plant/[slug]/page.tsx:584:1]
+ 581 |                     </div>
+ 582 |                         })}
+ 583 |                 </div>
+ 584 | ,->           </section>
+ 585 | |             
+ 586 | `->           {/* Globe Section */}
+ 587 |               <section id="globe" className="scroll-mt-20">
+ 588 |                 <div className="mx-auto max-w-4xl px-4 md:px-10">
+ 589 |                   <h2 className="mb-6 font-serif text-4xl font-medium tracking-tight">
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::__wbindgen_error_new::__wbg_Error_83742b46f01ce22d externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28638]:0x11c8533)
+    at wasm.wasm.wasm[45b31adcf0e553c2]::transform_sync (wasm://wasm/wasm.wasm-073f119a:wasm-function[1167]:0x64accd)
+    at wasm.wasm.wasm_bindgen_futures[c53a1ecb256a1440]::future_to_promise::<wasm[45b31adcf0e553c2]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[12297]:0xf5e77c)
+    at wasm.wasm.<wasm_bindgen_futures[c53a1ecb256a1440]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-073f119a:wasm-function[8615]:0xdd9cac)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> (wasm://wasm/wasm.wasm-073f119a:wasm-function[23541]:0x117a472)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[28646]:0x11c860e)
+    at wasm.wasm.wasm_bindgen[85fad33f9d8c6813]::convert::closures::_::invoke::<wasm_bindgen[85fad33f9d8c6813]::JsValue, core[de86a6c1f3de1a5b]::result::Result<(), wasm_bindgen[85fad33f9d8c6813]::JsError>, true> externref shim multivalue shim (wasm://wasm/wasm.wasm-073f119a:wasm-function[27050]:0x11baa84) 
+[?25h
