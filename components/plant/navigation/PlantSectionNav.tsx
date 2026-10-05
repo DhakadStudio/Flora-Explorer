@@ -1,48 +1,35 @@
 "use client";
 
-import { getPlant } from "@/data/plants";
-import { useLanguage } from "@/components/providers/language-provider";
-import { PlantScrollProgress } from "./PlantScrollProgress";
+import { type Plant } from "@/data/plants";
 
-type Plant = NonNullable<ReturnType<typeof getPlant>>;
-
-const sections = [
-  ["overview", "sec.overview"],
-  ["climate", "sec.climate"],
-  ["geography", "sec.globe"],
-  ["uses", "sec.uses"],
-  ["history", "sec.history"],
-  ["facts", "sec.facts"],
-  ["composition", "sec.composition"],
-  ["seasonality", "sec.seasonality"],
-  ["taxonomy", "sec.taxonomy"],
-  ["related", "sec.related"],
-] as const;
-
-export function PlantSectionNav({ plant: _plant }: { plant: Plant }) {
-  const { t } = useLanguage();
+export function PlantSectionNav({ plant }: { plant: Plant }) {
+  const sections = [
+    { id: "overview", label: "Overview" },
+    { id: "climate", label: "Climate" },
+    { id: "geography", label: "Geography" },
+    { id: "uses", label: "Uses" },
+    { id: "history", label: "History" },
+    { id: "composition", label: "Composition" },
+    { id: "seasonality", label: "Seasonality" },
+    { id: "taxonomy", label: "Taxonomy" },
+    { id: "related", label: "Related" },
+  ];
 
   return (
-    <>
-      <PlantScrollProgress />
-      <nav
-        aria-label="Plant sections"
-        className="sticky top-[7.5rem] z-10 mx-auto -mb-1 w-full max-w-7xl px-5 md:px-10"
-      >
-        <div className="overflow-x-auto border-b border-border/50 bg-background/80 backdrop-blur-xl">
-          <div className="flex min-w-max gap-1 py-2">
-            {sections.map(([id, key]) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="rounded-full px-3 py-2 font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                {t(key) || id}
-              </a>
-            ))}
-          </div>
+    <div className="sticky top-16 z-10 bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 overflow-x-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex gap-1">
+          {sections.map((section) => (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className="px-4 py-3 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 border-b-2 border-transparent hover:border-green-600 dark:hover:border-green-400 transition-all whitespace-nowrap"
+            >
+              {section.label}
+            </a>
+          ))}
         </div>
-      </nav>
-    </>
+      </div>
+    </div>
   );
 }

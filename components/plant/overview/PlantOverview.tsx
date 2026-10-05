@@ -1,42 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { getPlant } from "@/data/plants";
+import { type Plant } from "@/data/plants";
 import { useLanguage } from "@/components/providers/language-provider";
-import { PlantAppearance } from "./PlantAppearance";
-import { PlantHabitat } from "./PlantHabitat";
-import { PlantParts } from "./PlantParts";
-
-type Plant = NonNullable<ReturnType<typeof getPlant>>;
 
 export function PlantOverview({ plant }: { plant: Plant }) {
-  const { t } = useLanguage();
+  const { lang } = useLanguage();
 
   return (
-    <section id="overview" className="scroll-mt-32 border-b border-border/60 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-leaf">{t("sec.overview")}</p>
-            <h2 className="mt-4 font-serif text-4xl font-medium tracking-tight md:text-6xl">
-              A living profile.
-            </h2>
-          </div>
+    <section id="overview" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 scroll-mt-32">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-serif font-bold text-black dark:text-white mb-8">
+            Overview
+          </h2>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10%" }}
-            className="space-y-12"
-          >
-            <p className="max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-              {plant.description}
-            </p>
-            <PlantAppearance plant={plant} />
-            <PlantHabitat plant={plant} />
-            <PlantParts plant={plant} />
-          </motion.div>
-        </div>
+          <div className="space-y-6 text-gray-700 dark:text-gray-300">
+            <div>
+              <h3 className="text-xl font-semibold text-black dark:text-white mb-3">
+                Description
+              </h3>
+              <p className="leading-relaxed">{plant.description}</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-black dark:text-white mb-3">
+                Habitat
+              </h3>
+              <p className="leading-relaxed">{plant.habitat}</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

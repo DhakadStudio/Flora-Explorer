@@ -1,91 +1,84 @@
 "use client";
 
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-import { Leaf } from "@/components/Leaf";
+import { motion } from "framer-motion";
 import { PlantImage } from "@/components/plant-image";
-import { getPlant } from "@/data/plants";
+import { type Plant } from "@/data/plants";
 import { useLanguage } from "@/components/providers/language-provider";
-import { PlantHeroBackground } from "./PlantHeroBackground";
-import { PlantMiniHeader } from "./PlantMiniHeader";
-
-type Plant = NonNullable<ReturnType<typeof getPlant>>;
 
 export function PlantHero({ plant }: { plant: Plant }) {
-  const { t, lang } = useLanguage();
-  const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll();
-  const contentY = useTransform(scrollYProgress, [0, 0.2], ["0%", reduce ? "0%" : "10%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.05]);
-
+  const { lang } = useLanguage();
   const name = plant.names[lang] ?? plant.names.en;
 
   return (
-    <>
-      <section id="hero" className="relative -mt-16 flex min-h-svh overflow-hidden pt-16">
-        <PlantHeroBackground plant={plant} />
-
+    <section className="relative overflow-hidden bg-white dark:bg-black py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          style={{ y: contentY, opacity }}
-          className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-center px-5 py-24 md:px-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         >
-          <motion.p
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-6 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground"
-          >
-            <span className="h-px w-8 bg-leaf" />
-            {t("hero.eyebrow")}
-          </motion.p>
-
-          <h1 className="max-w-6xl font-serif text-[clamp(3.25rem,11vw,10rem)] font-medium leading-[0.88] tracking-[-0.04em]">
-            <motion.span
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15, duration: 0.8 }}
-              className="block"
-            >
-              {name}
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="block italic text-leaf-ink"
-            >
-              {plant.scientificName}
-            </motion.span>
-          </h1>
-
-          <div className="mt-8 flex flex-wrap gap-2">
-            <span className="rounded-full border border-border bg-background/70 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em]">
-              {plant.category}
-            </span>
-            {plant.geography.topProducers?.[0] && (
-              <span className="rounded-full border border-leaf/30 bg-leaf/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-leaf-ink">
-                {plant.geography.topProducers[0].country}
-              </span>
-            )}
+          {/* Image */}
+          <div className="relative h-[400px] md:h-[500px]">
+            <PlantImage
+              src={plant.image}
+              alt={plant.imageAlt}
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
 
-          <p className="mt-10 max-w-2xl text-pretty text-base leading-7 text-muted-foreground md:text-lg">
-            {plant.description}
-          </p>
+          {/* Content */}
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              <h1 className="text-4xl sm:text-5xl font-serif font-bold text-black dark:text-white mb-2">
+                {name}
+              </h1>
+              <p className="text-lg text-gray-600 dark:text-gray-400 italic font-mono">
+                {plant.scientificName}
+              </p>
+            </motion.div>
 
-          <a
-            href="#overview"
-            className="mt-12 inline-flex w-fit flex-col items-center gap-2 font-mono text-[9px] uppercase tracking-[0.28em] text-muted-foreground"
-          >
-            {t("hero.scroll")}
-            <span className="h-10 w-px overflow-hidden bg-border">
-              <span className="block h-1/2 w-full animate-scroll-cue bg-leaf" />
-            </span>
-            <ArrowDown className="sr-only" />
-          </a>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="flex flex-wrap gap-3"
+            >
+              <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
+                {plant.category}
+              </span>
+              <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
+                {plant.family}
+              </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                {plant.summary[lang] ?? plant.summary.en}
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="pt-4 border-t border-gray-200 dark:border-gray-700"
+            >
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                {plant.appearance}
+              </p>
+            </motion.div>
+          </div>
         </motion.div>
-      </section>
-
-      <PlantMiniHeader plant={plant} />
-    </>
+      </div>
+    </section>
   );
 }

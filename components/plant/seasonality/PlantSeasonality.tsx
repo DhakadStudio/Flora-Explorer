@@ -1,34 +1,87 @@
 "use client";
 
-import { getPlant } from "@/data/plants";
-import { useLanguage } from "@/components/providers/language-provider";
-import { SeasonalityWheel } from "./SeasonalityWheel";
+import { motion } from "framer-motion";
+import { type Plant } from "@/data/plants";
 
-type Plant = NonNullable<ReturnType<typeof getPlant>>;
+const monthNames = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 
 export function PlantSeasonality({ plant }: { plant: Plant }) {
-  const { t } = useLanguage();
-  const current = new Date().getMonth() + 1;
+  const seasonality = plant.seasonality;
+
+  const isActiveMonth = (months: number[], monthNum: number) => {
+    return months.includes(monthNum);
+  };
 
   return (
-    <section id="seasonality" className="scroll-mt-32 border-b border-border/60 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-leaf">{t("sec.seasonality")}</p>
-        <h2 className="mt-4 font-serif text-4xl md:text-6xl">A year in motion.</h2>
+    <section id="seasonality" className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black scroll-mt-32">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-serif font-bold text-black dark:text-white mb-12">
+            Seasonality
+          </h2>
 
-        <div className="mt-12 grid items-center gap-10 lg:grid-cols-[1fr_0.7fr]">
-          <SeasonalityWheel plant={plant} />
+          <div className="space-y-12">
+            {[
+              { label: "Sowing", months: seasonality.sowing, color: "bg-blue-500" },
+              {
+                label: "Flowering",
+                months: seasonality.flowering,
+                color: "bg-purple-500",
+              },
+              {
+                label: "Harvest",
+                months: seasonality.harvest,
+                color: "bg-green-500",
+              },
+            ].map((season, i) => (
+              <motion.div
+                key={season.label}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2, duration: 0.6 }}
+              >
+                <h3 className="text-lg font-semibold text-black dark:text-white mb-4">
+                  {season.label}
+                </h3>
 
-          <div className="rounded-2xl border border-border bg-card/40 p-6">
-            <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">Current month</p>
-            <p className="mt-3 font-serif text-4xl">{current}</p>
-            <div className="mt-6 space-y-3 text-sm text-muted-foreground">
-              <p>Sowing: {plant.seasonality?.sowing?.includes(current) ? "active" : "—"}</p>
-              <p>Flowering: {plant.seasonality?.flowering?.includes(current) ? "active" : "—"}</p>
-              <p>Harvest: {plant.seasonality?.harvest?.includes(current) ? "active" : "—"}</p>
-            </div>
+                <div className="grid grid-cols-12 gap-2">
+                  {monthNames.map((month, monthNum) => (
+                    <motion.div
+                      key={month}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: monthNum * 0.05, duration: 0.4 }}
+                      className={`flex items-center justify-center p-3 rounded-lg text-sm font-medium transition-colors ${
+                        isActiveMonth(season.months, monthNum + 1)
+                          ? `${season.color} text-white`
+                          : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-500"
+                      }`}
+                    >
+                      {month}
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
